@@ -25,7 +25,7 @@ namespace IceCreamShop
             // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
             foreach (Flavor flavor in availableFlavors)
             {
-                Console.WriteLine(flavor.Name);
+                Console.WriteLine($"{flavor.Name}: Allergen count = {flavor.Allergens.Count}");
             }
 
             availableCones.Sort(new ConeComparer());
